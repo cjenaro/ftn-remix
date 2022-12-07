@@ -1,0 +1,25 @@
+{
+  "include": ["remix.env.d.ts", "**/*.ts", "**/*.tsx"],
+  "compilerOptions": {
+    "lib": ["DOM", "DOM.Iterable", "es2021"],
+    "isolatedModules": true,
+    "esModuleInterop": true,
+    "jsx": "react-jsx",
+    "moduleResolution": "node",
+    "resolveJsonModule": true,
+    "strict": true,
+    "allowJs": true,
+    "forceConsistentCasingInFileNames": true,
+    "baseUrl": ".",
+    "paths": {
+      "~/*": ["./app/*"]
+    },
+    "allowSyntheticDefaultImports": true,
+    "declaration": true,
+    "module": "esnext",
+    "outDir": "dist",
+    "target": "es2021",
+    // Remix takes care of building everything in `remix build`.
+    "noEmit": true
+  }
+}

@@ -1,0 +1,58 @@
+[data-reach-accordion-item] {
+  background-color: var(--surface-2);
+  border-radius: var(--size-2);
+  margin: var(--size-4) 0;
+}
+
+[data-reach-accordion-item] h3 {
+  padding: var(--size-2) var(--size-4);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+[data-reach-accordion-item] button {
+  transition: rotate 0.5s var(--ease-4);
+  border-radius: 100%;
+  font-size: var(--font-size-4);
+  width: var(--size-7);
+  height: var(--size-7);
+}
+
+[data-reach-accordion-item] button[data-state="open"] {
+  rotate: 0.5turn;
+}
+
+[data-reach-accordion-panel][data-state="closed"] {
+  animation: var(--animation-fade-out) forwards;
+}
+
+[data-reach-accordion-panel] .content {
+  padding: var(--size-2) var(--size-4);
+  white-space: pre-line;
+  word-break: break-all;
+  overflow: hidden;
+}
+
+[data-reach-accordion-panel][data-state="open"] {
+  animation: var(--animation-fade-in) forwards;
+}
+
+.container h1 {
+  margin-bottom: 0;
+}
+
+.labels {
+  display: flex;
+  margin-bottom: var(--size-5);
+  align-content: center;
+  justify-content: center;
+  gap: var(--size-2);
+}
+
+.labels span {
+  background-color: var(--surface-4);
+  padding: var(--size-1) var(--size-2);
+  font-size: var(--font-size-0);
+  border-radius: 100vh;
+}
