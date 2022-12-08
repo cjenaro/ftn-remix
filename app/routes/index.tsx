@@ -41,7 +41,7 @@ export default function Index() {
 
   return (
     <div className="container">
-      <h1>Formulario Técnico Nacional</h1>
+      <h1>Formulario Terapéutico Nacional</h1>
       <div className="forms">
         <Form onChange={handleChange}>
           <select

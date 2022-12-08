@@ -12,7 +12,7 @@ import Header from "./components/header";
 
 export const meta: MetaFunction = () => ({
   charset: "utf-8",
-  title: "Formulario Técnico Nacional",
+  title: "Formulario Terapéutico Nacional",
   viewport: "width=device-width,initial-scale=1",
 });
 
